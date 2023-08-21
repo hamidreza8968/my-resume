@@ -1,0 +1,67 @@
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #f8f9fa;
+    border-bottom: 1px solid #e67e22;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    padding-bottom: 0.4rem;
+}
+
+.btn{
+    text-decoration: none;
+    color: #f8f9fa;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    padding: 1.2rem 1.6rem;
+    background-color: #e67e22;
+    border-radius: 16px;
+
+}
+
+.header{
+    padding-top: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-profile{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+.profile-name{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+.profile-job{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.Header-right-box{
+    display: flex;
+    flex-direction: column;
+    gap: 9.6rem;
+}
+
+.header-links{
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.header-divider{
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
