@@ -5,7 +5,9 @@ export default function Navigation({stages, stageNum, onClick}) {
 
     return (
         <div className="nav">
-            {stages.map((stage , i) => <MenuItem key={i} children={stage} onClick={() => onClick(stageNum)}/>)}
+            {stages.map((stage , i) =>
+                <MenuItem key={i} children={stage} onClick={() => onClick(stage,i)}/>
+                )}
         </div>
     )
 

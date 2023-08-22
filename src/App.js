@@ -21,18 +21,16 @@ const myInformation = {
 function App() {
   const stages = ["introduction", "about me", "education", "experience", "skills", "contact"];
 
-  const [stage, setStage] = useState("introduction");
-  const [stageNum , setStageNum] = useState(1);
+  const [stage, setStage] = useState({stageName: "introduction", stageNumber: 1});
 
-  function onClick(num) {
-    setStageNum(stageNum => num);
-    setStage(stage => stages[stageNum]);
+  function onClick(name,number) {
+    setStage({stageName: name, stageNumber: number+1})
   }
 
   return (
     <div className="App">
-      <Header myInformation={myInformation} stage={stage} stageNum={stageNum}/>
-      <Navigation stages={stages} stageNum={stageNum} onClick={onClick}/>
+      <Header myInformation={myInformation} stage={stage}/>
+      <Navigation stages={stages} onClick={onClick}/>
     </div>
   );
 }

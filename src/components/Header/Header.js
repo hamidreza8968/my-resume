@@ -3,7 +3,7 @@ import "./Header.css";
 import MenuItem from "../MenuItem/MenuItem";
 import Button from "../Button/Button";
 
-export default function Header({myInformation , stage , stageNum}) {
+export default function Header({myInformation , stage}) {
 
     return (
         <header className="header container">
@@ -17,8 +17,8 @@ export default function Header({myInformation , stage , stageNum}) {
                     <Button>get in touch</Button>
                 </div>
                 <div className="header-divider">
-                    <div className="divider-number">{stageNum}</div>
-                    <p className="divider-text">{stage}</p>
+                    <div className="divider-number">{stage.stageNumber}</div>
+                    <p className="divider-text">{stage.stageName}</p>
                     <hr className="divider-line"/>
                 </div>
             </div>
