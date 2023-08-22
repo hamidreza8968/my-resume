@@ -1,0 +1,16 @@
+.btn:link , .btn:visited{
+    text-decoration: none;
+    color: #f8f9fa;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    padding: 1.2rem 1.6rem;
+    background-color: #e67e22;
+    border-radius: 16px;
+    font-size: 1.4rem;
+
+    transition: all 0.3s;
+}
+
+.btn:hover , .btn:active{
+    background-color: #f76707;
+}

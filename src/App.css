@@ -29,21 +29,22 @@ cf711f/ 45260a / 45260a
 #6f6f6f(lightest grey allowed on #fdf2e9 background)
 #555
 #333
+#adb5bd
 
 
-05. Shadows
-0 2.4rem 4.8rem rgba(0,0,0,0.075);
+/*05. Shadows*/
+/*0 2.4rem 4.8rem rgba(0,0,0,0.075);*/
 
 
-06. Border radius
-default:9px / medium:16px / images:50%
+/*06. Border radius*/
+/*default:9px / medium:16px / images:50%*/
 
 
-07. White space
-- Spacing system (px):
-2/4/8/12/16/24/32/48/64/80/96/128
+/*07. White space*/
+/*- Spacing system (px):*/
+/*2/4/8/12/16/24/32/48/64/80/96/128*/
 
-*/
+/**!*/
 
 
 

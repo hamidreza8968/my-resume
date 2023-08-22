@@ -1,0 +1,13 @@
+.link:link , .link:visited{
+    text-decoration: none;
+    color: #adb5bd;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    padding-bottom: 0.4rem;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+.link:hover , .link:active{
+    color: #f8f9fa;
+    border-bottom: 1px solid #e67e22;
+}

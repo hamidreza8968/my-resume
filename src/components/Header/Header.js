@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import "./Header.css";
+import MenuItem from "../MenuItem/MenuItem";
+import Button from "../Button/Button";
 
-export default function Header({myInformation}) {
-    const [stage, setStage] = useState("introduction");
-    const [stageNum, setStageNum] = useState(1);
+export default function Header({myInformation , stage , stageNum}) {
 
     return (
         <header className="header container">
@@ -13,8 +13,8 @@ export default function Header({myInformation}) {
             </div>
             <div className="Header-right-box">
                 <div className="header-links">
-                    <a className="link" href="#">download my cv</a>
-                    <a className="btn" href="#">get in touch</a>
+                    <MenuItem>download my cv</MenuItem>
+                    <Button>get in touch</Button>
                 </div>
                 <div className="header-divider">
                     <div className="divider-number">{stageNum}</div>
