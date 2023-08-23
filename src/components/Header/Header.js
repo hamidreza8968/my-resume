@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 export default function Header({myInformation , stage}) {
 
     return (
-        <header className="header container">
+        <header className="header">
             <div className="header-profile">
                 <p className="profile-name">{myInformation.firstName} {myInformation.lastName}</p>
                 <p className="profile-job">{myInformation.job}</p>

@@ -1,5 +1,8 @@
 .nav{
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 3.2rem;
+    justify-content: center;
+
+    grid-row: 2;
 }

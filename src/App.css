@@ -57,19 +57,81 @@ cf711f/ 45260a / 45260a
 html{
     font-size: 62.5%;
 
-    overflow-x: hidden;
     scroll-behavior: smooth;
+
+    height: 100%;
+    overflow: hidden;
 }
 
 body{
     background: rgb(4,4,30);
-    background: linear-gradient(360deg, rgba(4,4,30,1) 62%, rgba(7,7,55,1) 85%, rgba(4,4,76,1) 92%, rgba(163,63,4,1) 100%);
+    background: linear-gradient(360deg, rgba(4,4,30,1) 50%, rgba(7,7,55,1) 80%);
     background-repeat: no-repeat;
 
     font-family: "Inter" , sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #f8f9fa;
+}
 
-    overflow-x: hidden;
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid{
+    display: grid;
+    column-gap: 4.8rem;
+    row-gap: 9.6rem;
+    margin-bottom: 9.6rem;
+}
+
+.grid:last-child{
+    margin-bottom: 0;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2 , 1fr);
+}
+.grid--3-cols{
+    grid-template-columns: repeat(3 , 1fr);
+}
+.grid--4-cols{
+    grid-template-columns: repeat(4 , 1fr);
+}
+.grid--5-cols{
+    grid-template-columns: repeat(5 , 1fr);
+}
+
+.grid--center-v{
+    align-items: center;
+}
+
+
+.app{
+    grid-template-columns: 2fr 3fr 5fr;
+}
+
+.img-box{
+    position: relative;
+}
+.img{
+    height: 30rem;
+    width: 24rem;
+    border-radius: 16px;
+}
+.img-box::after{
+    content: "";
+    display: block;
+    border: 1px solid #e67e22;
+    height: 30rem;
+    width: 24rem;
+    border-radius: 16px;
+    z-index: -999;
+
+    position: absolute;
+    top: 0;
+    transform: translate(8px,8px);
 }

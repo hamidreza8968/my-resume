@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client"
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
+import myPic from "./images/my.jpeg"
 
 
 const myInformation = {
@@ -28,9 +29,13 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app container grid grid--3-cols">
       <Header myInformation={myInformation} stage={stage}/>
       <Navigation stages={stages} onClick={onClick}/>
+      <div className="img-box">
+        <img className="img" src={myPic} alt="my picture"/>
+      </div>
+
     </div>
   );
 }
