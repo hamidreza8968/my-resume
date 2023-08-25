@@ -14,22 +14,24 @@ default:1 / small: 1.05 / medium: 1.2 /paragraph default: 1.6 / medium: 1.8
 
 02. Colors
 - Primary: #e67e22
+- blue for boxes: #304AB3
+ */
 
-- Tints:
-fdf2e9 / fae5d3 / eb984e
+/*- Tints:*/
+/*!*fdf2e9 / fae5d3 / eb984e*! #F5C07C*/
 
-- Shades:
-cf711f/ 45260a / 45260a
+/*- Shades:*/
+/*cf711f/ 45260a / 45260a*/
 
-- Accents:
+/*- Accents:*/
 
-- GREYS:
-#888
-(lightest grey allowed on #fff background)
-#6f6f6f(lightest grey allowed on #fdf2e9 background)
-#555
-#333
-#adb5bd
+/*- GREYS:*/
+/*#888*/
+/*(lightest grey allowed on #fff background)*/
+/*#6f6f6f(lightest grey allowed on #fdf2e9 background)*/
+/*#555*/
+/*#333*/
+/*#adb5bd*/
 
 
 /*05. Shadows*/
@@ -136,7 +138,7 @@ body{
     transform: translate(8px,8px);
 }
 
-.stage-content-heading{
+.heading{
     font-weight: 700;
     letter-spacing: -0.5px;
 
@@ -144,4 +146,11 @@ body{
     line-height: 1.05;
     margin-bottom: 3.2rem;
 }
+
+/*.icon{*/
+/*    color: #f8f9fa;*/
+/*    font-size: 2.4rem;*/
+/*    font-weight: 700;*/
+/*    text-align: center;*/
+/*}*/
 

@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import myPic from "./images/my.jpeg"
 import Introduction from "./components/Introduction/Introduction";
+import Education from "./components/Education/Education";
 
 
 
@@ -40,7 +41,7 @@ function App() {
         <img className="img" src={myPic} alt="my picture"/>
       </div>
         {stage.stageName === "introduction" && <Introduction myInformation={myInformation}/>}
-        {/*{stage.stageName === "introduction" && <Introduction/>}*/}
+        {stage.stageName === "education" && <Education myInformation={myInformation}/>}
         {/*{stage.stageName === "introduction" && <Introduction/>}*/}
         {/*{stage.stageName === "introduction" && <Introduction/>}*/}
         {/*{stage.stageName === "introduction" && <Introduction/>}*/}
