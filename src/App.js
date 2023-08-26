@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 import myPic from "./images/my.jpeg"
 import Introduction from "./components/Introduction/Introduction";
 import Education from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
 
 
 
@@ -16,9 +17,6 @@ const myInformation = {
   lastName : "Seyedabadi",
   age : 34,
   job : "Frontend-developer",
-  educationBachelor: {major:"industrial engineering", university:"Iran university of science and technology"},
-  educationMaster: {major:"industrial management", university:"Allameh tabatabai university"},
-  experience: [{companyName: "Kowsar Insurance", position: "System and Process specialist" , start: "Mar 2017" , end: "Nov 2022"}, {companyName: "Freelance(Self employed)", position: "Intern Frontend Web Developer" , start: "Dec 2022" , end: "Now"}],
   skills: [["HTML" , "CSS" , "SASS" , "Git" , "JavaScript" , "React.js" , "Redux.js"] , ["BPMN" , "ISO 9001", "ISO 10002 ", "ISO 10004", "ISO 10015", "Microsoft Office", "Compilation of internal guidelines and documents", "Strategic Planning"]],
   contact: {Email: "hamidreza.seydabadi68@gmail.com", Linkedin: "linkedin.com/in/hamidreza-seydabadi-b64996267" , Github: "github.com/hamidreza8968"},
   };
@@ -41,8 +39,8 @@ function App() {
         <img className="img" src={myPic} alt="my picture"/>
       </div>
         {stage.stageName === "introduction" && <Introduction myInformation={myInformation}/>}
-        {stage.stageName === "education" && <Education myInformation={myInformation}/>}
-        {/*{stage.stageName === "introduction" && <Introduction/>}*/}
+        {stage.stageName === "education" && <Education/>}
+        {stage.stageName === "experience" && <Experience/>}
         {/*{stage.stageName === "introduction" && <Introduction/>}*/}
         {/*{stage.stageName === "introduction" && <Introduction/>}*/}
     </div>

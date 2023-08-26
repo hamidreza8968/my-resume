@@ -15,8 +15,9 @@ export default function Education() {
 
     const [curOpen, setCurOpen] = useState(null);
 
-    const renderedCards = educationInfo.map((card, index) => <Card key={index} num={index} cardInfo={card}
-                                                                   curOpen={curOpen} setCurOpen={setCurOpen}/>);
+    const renderedCards = educationInfo.map((card, index) =>
+        <Card key={index} num={index} cardInfo={card} curOpen={curOpen} setCurOpen={setCurOpen}/>
+        );
 
     return (
         <div className="education-cards">

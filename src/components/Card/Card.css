@@ -1,5 +1,5 @@
 .card{
-    background-color: #304AB3;
+    background-color: #e67e2342;
     padding: 3.2rem;
     border-radius: 16px;
 
@@ -11,7 +11,6 @@
 .card-openPart{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.4rem;
 }
 
 .card-headingBox{
@@ -32,15 +31,8 @@
 .icon{
     color: #f8f9fa;
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
-}
-
-.card-text{
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: #f8f9fa;
-    text-transform: capitalize;
 }
 
 .open {
@@ -48,6 +40,6 @@
 }
 
 .open .card-openPart,
-.open .card-text {
+.open .text {
     color: #F5C07C;
 }
