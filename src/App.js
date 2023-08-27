@@ -7,6 +7,7 @@ import myPic from "./images/my.jpeg"
 import Introduction from "./components/Introduction/Introduction";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
+import SkillList from "./components/SkillList/SkillList";
 
 
 
@@ -41,7 +42,7 @@ function App() {
         {stage.stageName === "introduction" && <Introduction myInformation={myInformation}/>}
         {stage.stageName === "education" && <Education/>}
         {stage.stageName === "experience" && <Experience/>}
-        {/*{stage.stageName === "introduction" && <Introduction/>}*/}
+        {stage.stageName === "skills" && <SkillList/>}
         {/*{stage.stageName === "introduction" && <Introduction/>}*/}
     </div>
   );

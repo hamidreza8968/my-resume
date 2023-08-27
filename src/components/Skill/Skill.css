@@ -1,0 +1,33 @@
+.skill-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+.skill-box-beginner{
+    background-color: rgb(230 126 35 / 32%);
+    border-top: 3px solid rgb(230 126 35 / 32%);
+}
+.skill-box-intermediate{
+    background-color: rgb(140 233 154 / 32%);
+    border-top: 3px solid rgb(140 233 154 / 32%);
+}
+.skill-box:hover{
+    cursor: pointer;
+    border-top: 3px solid #e67e22;
+    color: #F5C07C;
+}
+
+.skill-title{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.skill-level{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
