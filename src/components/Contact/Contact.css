@@ -1,0 +1,31 @@
+.contact-text{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    border: 1px solid #e67e22;
+    border-radius: 16px;
+
+    padding: 3.2rem 2.4rem;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.form-item:last-child{
+    align-self: end;
+}
+
+.input{
+    border-radius: 9px;
+    padding: 1.2rem;
+    border: none;
+    background-color: #e67e2342;
+    color: #f8f9fa;
+}

@@ -1,9 +1,9 @@
 import "./Button.css";
 
-export default function Button({children}) {
+export default function Button({children , handleClick}) {
     return (
         <div>
-            <a className="btn" href="#">{children}</a>
+            <a onClick={handleClick} className="btn" href="#">{children}</a>
         </div>
     )
 }

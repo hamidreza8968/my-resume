@@ -3,13 +3,13 @@ import "./Header.css";
 import MenuItem from "../MenuItem/MenuItem";
 import Button from "../Button/Button";
 
-export default function Header({myInformation , stage}) {
+export default function Header({stage}) {
 
     return (
         <header className="header">
             <div className="header-profile">
-                <p className="profile-name">{myInformation.firstName} {myInformation.lastName}</p>
-                <p className="profile-job">{myInformation.job}</p>
+                <p className="profile-name">Hamidreza Seyedabadi</p>
+                <p className="profile-job">Frontend Developer</p>
             </div>
             <div className="Header-right-box">
                 <div className="header-links">
