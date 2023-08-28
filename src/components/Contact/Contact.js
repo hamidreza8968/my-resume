@@ -28,6 +28,42 @@ export default function Contact() {
         <div>
             <h1 className="heading">Contact me</h1>
             <p className="contact-text">This form is just a view and doesn't have any backend database</p>
+
+            <div className="contact-links">
+                <div className="contact-linkBox">
+
+                    <a data-title="076-2812532" className="link contact-link tooltip" target="_blank" href="tel:076-2812532">
+                        <div className="icon">
+                            <ion-icon name="call-outline"/>
+                        </div>
+                    </a>
+                </div>
+                <div className="contact-linkBox">
+                    <a data-title="hamidreza.seydabadi68@gmail.com" className="link contact-link tooltip" target="_blank"
+                       href="https://www.gmail.com/">
+                        <div className="icon">
+                            <ion-icon name="mail-outline"/>
+                        </div>
+                    </a>
+                </div>
+                <div className="contact-linkBox">
+                    <a className="link contact-link" target="_blank"
+                       href="https://www.linkedin.com/in/hamidreza-seydabadi-b64996267/">
+                        <div className="icon">
+                            <ion-icon name="logo-linkedin"/>
+                        </div>
+                    </a>
+                </div>
+                <div className="contact-linkBox">
+                    <a className="link contact-link" target="_blank"
+                       href="https://github.com/hamidreza8968">
+                        <div className="icon">
+                            <ion-icon name="logo-github"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <form className="form" onSubmit={handleSubmit} action="#">
                 <div className="form-item">
                     <label htmlFor="name">Name</label>
@@ -42,7 +78,8 @@ export default function Contact() {
                 </div>
                 <div className="form-item">
                     <label htmlFor="email">Email</label>
-                    <input className={isValidEmail ? "input" : "input invalid"} value={form.email} type="email" id="email"
+                    <input className={isValidEmail ? "input" : "input invalid"} value={form.email} type="email"
+                           id="email"
                            onChange={(e) => {
                                setForm((prevState) => ({
                                    ...prevState,
@@ -51,7 +88,8 @@ export default function Contact() {
                                setIsValidEmail(validateEmail(e.target.value));
                            }}/>
                     {isSubmitted && !form.email && <p className="error-message">Please fill the fields!</p>}
-                    {!isValidEmail && form.email!=="" && <p className="error-message">Please enter a valid email address.</p>}
+                    {!isValidEmail && form.email !== "" &&
+                    <p className="error-message">Please enter a valid email address.</p>}
                 </div>
                 <div className="form-item">
                     <label htmlFor="message">Message</label>
@@ -70,5 +108,4 @@ export default function Contact() {
             </form>
         </div>
     )
-
 }
