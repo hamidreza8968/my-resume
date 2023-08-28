@@ -29,3 +29,10 @@
     background-color: #e67e2342;
     color: #f8f9fa;
 }
+.input::placeholder{
+    color: #adb5bd;
+}
+
+.error-message{
+    color: red;
+}
