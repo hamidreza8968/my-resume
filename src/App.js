@@ -17,6 +17,8 @@ function App() {
 
   const [stage, setStage] = useState({stageName: "introduction", stageNumber: 1});
 
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   function onClick(name,number) {
     setStage({stageName: name, stageNumber: number+1})
   }
@@ -24,10 +26,10 @@ function App() {
 
   return (
     <div className="app container grid grid--3-cols">
-      <Header stage={stage}/>
+      <Header stage={stage} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>
       <Navigation stages={stages} onClick={onClick}/>
-      <div className="img-box">
-        <img className="img" src={myPic} alt="my picture"/>
+        <div className="img-box">
+            {!modalIsOpen && <img className="img" src={myPic} alt="my picture"/>}
       </div>
         {stage.stageName === "introduction" && <Introduction/>}
         {stage.stageName === "education" && <Education/>}

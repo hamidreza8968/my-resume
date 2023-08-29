@@ -1,6 +1,7 @@
 import "./Contact.css"
 import Button from "../Button/Button";
 import {useState} from "react";
+import ContactLinks from "../ContactLinks/ContactLinks";
 
 export default function Contact() {
     const [form, setForm] = useState({name: "", email: "", message: ""});
@@ -40,41 +41,7 @@ export default function Contact() {
         <div>
             <h1 className="heading">Contact me</h1>
             <p className="contact-text">This form is just a view and doesn't have any backend database!</p>
-
-            <div className="contact-links">
-                <div className="contact-linkBox">
-
-                    <a data-title="076-2812532" className="link contact-link tooltip" target="_blank" href="tel:076-2812532">
-                        <div className="icon">
-                            <ion-icon name="call-outline"/>
-                        </div>
-                    </a>
-                </div>
-                <div className="contact-linkBox">
-                    <a data-title="hamidreza.seydabadi68@gmail.com" className="link contact-link tooltip" target="_blank"
-                       href="https://www.gmail.com/">
-                        <div className="icon">
-                            <ion-icon name="mail-outline"/>
-                        </div>
-                    </a>
-                </div>
-                <div className="contact-linkBox">
-                    <a className="link contact-link" target="_blank"
-                       href="https://www.linkedin.com/in/hamidreza-seydabadi-b64996267/">
-                        <div className="icon">
-                            <ion-icon name="logo-linkedin"/>
-                        </div>
-                    </a>
-                </div>
-                <div className="contact-linkBox">
-                    <a className="link contact-link" target="_blank"
-                       href="https://github.com/hamidreza8968">
-                        <div className="icon">
-                            <ion-icon name="logo-github"/>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <ContactLinks/>
 
             <form className="form" onSubmit={handleSubmit} action="#">
                 <div className="form-item">
