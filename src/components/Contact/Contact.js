@@ -12,7 +12,19 @@ export default function Contact() {
         return emailPattern.test(input);
     };
 
-    console.log(form);
+
+
+
+    function handleChange(e , fieldName) {
+        const value = e.target.value;
+        setForm((prevState) => ({
+            ...prevState, [fieldName]:value}));
+
+        if (fieldName==="email"){
+            setIsValidEmail(validateEmail(value));
+        }
+    }
+
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -27,7 +39,7 @@ export default function Contact() {
     return (
         <div>
             <h1 className="heading">Contact me</h1>
-            <p className="contact-text">This form is just a view and doesn't have any backend database</p>
+            <p className="contact-text">This form is just a view and doesn't have any backend database!</p>
 
             <div className="contact-links">
                 <div className="contact-linkBox">
@@ -68,9 +80,7 @@ export default function Contact() {
                 <div className="form-item">
                     <label htmlFor="name">Name</label>
                     <input className="input" value={form.name}
-                           onChange={(e) => setForm((prevState) => ({
-                               ...prevState, name: e.target.value,
-                           }))}
+                           onChange={(e) => handleChange(e , "name")}
                            type="text"
                            id="name"/>
 
@@ -80,13 +90,7 @@ export default function Contact() {
                     <label htmlFor="email">Email</label>
                     <input className={isValidEmail ? "input" : "input invalid"} value={form.email} type="email"
                            id="email"
-                           onChange={(e) => {
-                               setForm((prevState) => ({
-                                   ...prevState,
-                                   email: e.target.value,
-                               }));
-                               setIsValidEmail(validateEmail(e.target.value));
-                           }}/>
+                           onChange={(e) => handleChange(e , "email")}/>
                     {isSubmitted && !form.email && <p className="error-message">Please fill the fields!</p>}
                     {!isValidEmail && form.email !== "" &&
                     <p className="error-message">Please enter a valid email address.</p>}
@@ -94,10 +98,7 @@ export default function Contact() {
                 <div className="form-item">
                     <label htmlFor="message">Message</label>
                     <textarea className="input" value={form.message}
-                              onChange={(e) => setForm((prevState) => ({
-                                  ...prevState,
-                                  message: e.target.value,
-                              }))}
+                              onChange={(e) => handleChange(e , "message")}
                               name="message" id="message" cols="40" rows="8"
                               placeholder="Type your message..."/>
                     {isSubmitted && !form.message && <p className="error-message">Please fill the fields!</p>}

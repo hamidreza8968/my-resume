@@ -1,7 +1,6 @@
 .contact{
     display: flex;
     gap: 3.2rem;
-    max-width: 52rem;
 }
 
 .contact-text{
