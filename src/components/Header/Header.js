@@ -5,7 +5,9 @@ import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
 
-export default function Header({stage , modalIsOpen , setModalIsOpen}) {
+export default function Header({stage}) {
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
 
     function handleOpenModal() {
@@ -27,7 +29,11 @@ export default function Header({stage , modalIsOpen , setModalIsOpen}) {
                 <div className="header-links">
                     <MenuItem>download my cv</MenuItem>
                     <Button handleClick={handleOpenModal}>get in touch</Button>
-                    <Modal modalIsOpen={modalIsOpen} onClose={handleCloseModal} children={<ContactLinks/>}/>
+                    <Modal modalIsOpen={modalIsOpen} onClose={handleCloseModal}>
+                        <h2>Let's Connect</h2>
+                        <p>I'm always excited to connect with fellow developers, collaborators, and potential employers. Whether you have a question, a project idea, or just want to say hello, feel free to reach out using any of the methods below.</p>
+                        <ContactLinks/>
+                    </Modal>
 
                 </div>
 

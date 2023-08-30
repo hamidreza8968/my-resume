@@ -6,7 +6,7 @@
 .contact-text{
     font-size: 1.4rem;
     line-height: 1.2;
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
 }
 
 .form{
@@ -17,6 +17,7 @@
     border-radius: 16px;
 
     padding: 3.2rem 2.4rem;
+    margin-top: 3.2rem;
 }
 .form-item{
     display: flex;
