@@ -43,3 +43,33 @@
     opacity: 1;
     visibility: visible;
 }
+
+
+
+
+/********************************/
+/*below 704px(44em)(smaller tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .tooltip::before {
+        font-size: 1rem;
+    }
+}
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
+    .tooltip::before {
+        font-size: 0.8rem;
+    }
+}
+
+/********************************/
+/*below 384px(24em)(small phones)*/
+/********************************/
+@media (max-width: 24em) {
+    .tooltip::before {
+        font-size: 0.6rem;
+    }
+}

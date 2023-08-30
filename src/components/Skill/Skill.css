@@ -31,3 +31,37 @@
     text-transform: capitalize;
     font-size: 0.8rem;
 }
+
+
+
+
+
+/********************************/
+/*below 704px(44em)(smaller tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .skill-title{
+        font-size: 0.8rem;
+    }
+
+    .skill-level{
+        font-size: 0.6rem;
+    }
+
+}
+
+/********************************/
+/*below 384px(24em)(small Phones)*/
+/********************************/
+@media (max-width: 24em) {
+    .skill-title{
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+
+    .skill-level{
+        font-size: 0.5rem;
+    }
+
+
+}

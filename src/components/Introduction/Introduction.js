@@ -6,7 +6,7 @@ export default function Introduction() {
 
     return (
         <div>
-            <h1 className="heading">Hello! I'm Hamidreza Seyedabadi</h1>
+            <h1 className="introduction-heading">Hello! I'm Hamidreza Seyedabadi</h1>
             <ul className="list">
                 <li className="list-item">I'm <span>34</span> years old With <span>6</span> years of experience as a process management specialist, I've developed my adaptable and collaborative skills.</li>
                 <li className="list-item">Because of My interest in programming, I took relevant courses. I've focused on learning <span>CSS</span>, <span>HTML</span>, <span>JavaScript</span>, and <span>React</span> through writing personal projects in the last year.</li>

@@ -54,3 +54,31 @@
     color: #f8f9fa;
     text-transform: capitalize;
 }
+
+
+
+
+
+/********************************/
+/*below 704px(44em)(small tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .timeline-item-title{
+        font-size: 1.4rem;
+    }
+    .timeline-item-text{
+        font-size: 1rem;
+    }
+}
+
+/********************************/
+/*below 384px(24em)(small phones)*/
+/********************************/
+@media (max-width: 24em) {
+    .timeline-item-title{
+        font-size: 1.2rem;
+    }
+    .timeline-item-text{
+        font-size: 0.8rem;
+    }
+}

@@ -38,8 +38,8 @@ export default function Contact() {
     }
 
     return (
-        <div>
-            <h1 className="heading">Contact me</h1>
+        <div className="contact">
+            <h1 className="contact-heading">Contact me</h1>
             <p className="contact-text">This form is just a view and doesn't have any backend database!</p>
             <ContactLinks/>
 

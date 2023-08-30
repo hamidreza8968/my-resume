@@ -56,7 +56,7 @@ export default function SkillList() {
     const renderedSkills = skills.map((skill , index) => <Skill key={index} skill={skill}/>);
 
         return (
-            <div className="grid grid--3-cols skill-list">
+            <div className="skill-list">
                 {renderedSkills}
             </div>
         );

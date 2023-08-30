@@ -1,3 +1,11 @@
+.introduction-heading{
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
 
 .list{
     list-style: none;
@@ -18,4 +26,30 @@
     font-weight: 600;
     color: #e67e22;
     text-transform: capitalize;
+}
+
+
+
+
+/********************************/
+/*below 944px(59em)(tablets)*/
+/********************************/
+@media (max-width: 59em) {
+    .introduction-heading{
+        font-size: 2rem;
+    }
+}
+
+/********************************/
+/*below 704px(44em)(small tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .introduction-heading{
+        font-size: 1.4rem;
+    }
+
+    .list-item{
+        font-size: 1rem;
+    }
+
 }

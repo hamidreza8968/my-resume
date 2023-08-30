@@ -1,6 +1,10 @@
-.contact{
-    display: flex;
-    gap: 3.2rem;
+.contact-heading{
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
 }
 
 .contact-text{
@@ -29,17 +33,67 @@
 }
 
 .input{
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: inherit;
     border-radius: 9px;
     padding: 1.2rem;
     border: none;
     background-color: #e67e2342;
     color: #f8f9fa;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 .input::placeholder{
     color: #adb5bd;
 }
 .error-message{
     color: red;
+}
+
+
+
+
+/********************************/
+/*below 704px(44em)(small tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .contact-heading{
+        font-size: 1.8rem;
+    }
+
+    .contact-text{
+        font-size: 1.2rem;
+    }
+
+    .input{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
+/********************************/
+/*below 384px(24em)(small phones)*/
+/********************************/
+@media (max-width: 24em) {
+    .contact-heading{
+        font-size: 1.4rem;
+    }
+
+    .contact-text{
+        font-size: 1rem;
+    }
+
+    .input{
+        font-size: 1rem;
+    }
+
+    .form{
+        padding: 2.4rem 1.6rem;
+    }
+
 }
 
 

@@ -14,8 +14,6 @@
 }
 
 .card-headingBox{
-    font-size: 2.4rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +26,15 @@
     text-transform: capitalize;
 }
 
-.icon{
+.card-text{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #f8f9fa;
+    text-transform: capitalize;
+}
+
+.card-icon{
     color: #f8f9fa;
     font-size: 2.4rem;
     font-weight: 600;
@@ -40,6 +46,45 @@
 }
 
 .open .card-openPart,
-.open .text {
+.open .card-text,
+.open .card-icon{
     color: #F5C07C;
+}
+
+
+
+
+/********************************/
+/*below 704px(44em)(small tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .card-heading{
+        font-size: 1.6rem;
+    }
+
+    .card-text{
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .card-icon{
+        font-size: 1.6rem;
+    }
+}
+
+/********************************/
+/*below 384px(24em)(small phones)*/
+/********************************/
+@media (max-width: 24em) {
+    .card-heading{
+        font-size: 1.2rem;
+    }
+
+    .card-text{
+        font-size: 0.8rem;
+    }
+
+    .card-icon{
+        font-size: 1rem;
+    }
 }

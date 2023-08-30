@@ -26,7 +26,7 @@
 .modal-content{
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 4.8rem;
 
     font-size: 1.6rem;
     line-height: 1.6;
@@ -42,4 +42,54 @@
     color: #f8f9fa;
     font-size: 4.4rem;
     font-weight: 600;
+}
+
+
+/********************************/
+/*below 1200px(75em)(landscape tablets)*/
+/********************************/
+@media (max-width: 75em) {
+    .modal-content{
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+}
+
+/********************************/
+/*below 944px(59em)(tablets)*/
+/********************************/
+@media (max-width: 59em) {
+    .modal{
+        width: 75%;
+    }
+
+    .close-button{
+        font-size: 3rem;
+    }
+
+}
+
+
+/********************************/
+/*below 704px(44em)(smaller tablets)*/
+/********************************/
+@media (max-width: 44em) {
+    .modal{
+        width: 80%;
+    }
+
+    .modal-content{
+        font-size: 1rem;
+    }
+}
+
+
+/********************************/
+/*below 384px(24em)(smaller phones)*/
+/********************************/
+@media (max-width: 24em) {
+    .modal{
+        width: 100%;
+    }
 }

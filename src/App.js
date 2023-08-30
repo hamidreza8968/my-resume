@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import ReactDOM from "react-dom/client"
 import "./App.css";
+
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import myPic from "./images/my.jpeg"
@@ -24,17 +25,23 @@ function App() {
 
 
   return (
-    <div className="app container grid grid--3-cols">
+    <div className="app container">
       <Header stage={stage}/>
+
       <Navigation stages={stages} onClick={onClick}/>
-        <div className="img-box">
+
+      <div className="img-box">
             <img className="img" src={myPic} alt="my picture"/>
       </div>
-        {stage.stageName === "introduction" && <Introduction/>}
-        {stage.stageName === "education" && <Education/>}
-        {stage.stageName === "experience" && <Experience/>}
-        {stage.stageName === "skills" && <SkillList/>}
-        {stage.stageName === "contact" && <Contact/>}
+
+        <div className="component-box">
+            {stage.stageName === "introduction" && <Introduction/>}
+            {stage.stageName === "education" && <Education/>}
+            {stage.stageName === "experience" && <Experience/>}
+            {stage.stageName === "skills" && <SkillList/>}
+            {stage.stageName === "contact" && <Contact/>}
+        </div>
+
     </div>
   );
 }

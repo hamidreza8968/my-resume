@@ -1,4 +1,3 @@
-
 .header{
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
@@ -34,7 +33,7 @@
 
 .header-links{
     display: flex;
-    gap: 2.4rem;
+    gap: 2rem;
     align-items: center;
     align-self: end;
 
@@ -43,22 +42,23 @@
 
 .header-divider{
     display: flex;
-    gap: 1.6rem;
+    gap: 1.4rem;
     align-items: center;
 }
 .divider-number{
-    font-size: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
     border: 1px solid #e67e22;
     color: #e67e22;
     border-radius: 50%;
-    padding: 1rem 1rem;
-    width: 5%;
+    padding: 0.5rem 0.5rem;
+    width: 4%;
 }
 .divider-text{
     font-size: 1rem;
     color: #e67e22;
     text-transform: uppercase;
-    width: 15%;
+    width: 16%;
 }
 .divider-line{
     width: 80%;
@@ -68,8 +68,71 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #e67e22;
-    margin: 1em 0;
+    margin: 1rem;
     padding: 0;
 }
+
+
+
+
+
+
+
+/********************************/
+/*below 704px(44em)(small tablets)*/
+/********************************/
+@media (max-width: 44em) {
+
+    .profile-name{
+        font-size: 1.4rem;
+    }
+    .profile-job{
+        font-size: 1rem;
+    }
+
+    .header-divider{
+        gap: 1.2rem;
+    }
+
+    .divider-number{
+        font-size: 0.6rem;
+        padding: 0.4rem 0.4rem;
+    }
+    .divider-text{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
+    .Header-right-box{
+        width: 70%;
+    }
+
+    .profile-name{
+        font-size: 0.9rem;
+    }
+    .profile-job{
+        font-size: 0.7rem;
+    }
+
+    .header-divider{
+        gap: 1.2rem;
+    }
+
+    .divider-number{
+        font-size: 0.5rem;
+        padding: 0.3rem 0.3rem;
+    }
+    .divider-text{
+        font-size: 0.7rem;
+    }
+
+}
+
 
 
