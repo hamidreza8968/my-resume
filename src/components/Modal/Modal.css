@@ -20,7 +20,7 @@
     justify-content: space-between;
     background-color: #e67e229e;
     padding: 3.2rem 3.2rem;
-    width: 50%;
+    width: 75%;
 }
 
 .modal-content{
@@ -50,8 +50,8 @@
 /********************************/
 @media (max-width: 75em) {
     .modal-content{
-        font-size: 1.2rem;
-        line-height: 1.2;
+        font-size: 1.6rem;
+        line-height: 1.6;
     }
 
 }
@@ -60,8 +60,9 @@
 /*below 944px(59em)(tablets)*/
 /********************************/
 @media (max-width: 59em) {
-    .modal{
-        width: 75%;
+    .modal-content{
+        font-size: 1.4rem;
+        line-height: 1.6;
     }
 
     .close-button{
@@ -72,15 +73,11 @@
 
 
 /********************************/
-/*below 704px(44em)(smaller tablets)*/
+/*below 768px(48em)(smaller tablets)*/
 /********************************/
-@media (max-width: 44em) {
+@media (max-width: 48em) {
     .modal{
         width: 100%;
         height: 100vh;
-    }
-
-    .modal-content{
-        font-size: 1rem;
     }
 }

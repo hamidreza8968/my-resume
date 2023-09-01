@@ -4,11 +4,8 @@
     color: #f8f9fa;
     text-transform: uppercase;
     letter-spacing: 0.75px;
-    padding: 1.2rem 1.6rem;
     background-color: #e67e22;
     border-radius: 16px;
-    font-size: 1.4rem;
-
     transition: all 0.3s;
 }
 
@@ -17,13 +14,3 @@
 }
 
 
-
-/********************************/
-/*below 544px(34em)(phones)*/
-/********************************/
-@media (max-width: 34em) {
-    .btn:link , .btn:visited{
-        font-size: 0.9rem;
-        padding: 1rem 1.2rem;
-    }
-}

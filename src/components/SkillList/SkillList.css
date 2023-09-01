@@ -3,19 +3,44 @@
     column-gap: 1.6rem;
     row-gap: 1.6rem;
     margin-bottom: 9.6rem;
-
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(2 , 1fr);
 }
 
 
 
 /********************************/
-/*below 944px(59em)(tablets)*/
+/*below 768px(48em)(smaller tablets)*/
 /********************************/
-@media (max-width: 59em) {
+@media (max-width: 48em) {
+    .skill-list{
+        grid-template-columns: repeat(3 , 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        height: 65%;
+        overflow-y: scroll;
+    }
+}
+
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
     .skill-list{
         grid-template-columns: repeat(2 , 1fr);
     }
 
 }
+
+
+/********************************/
+/*below 416px(26em)(small Phones)*/
+/********************************/
+@media (max-width: 26em) {
+    .skill-list{
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+    }
+}
+
 

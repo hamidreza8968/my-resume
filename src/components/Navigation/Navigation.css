@@ -6,3 +6,18 @@
 
     grid-row: 2;
 }
+
+.menuItem-link{
+    font-size: 1.4rem;
+}
+
+
+
+/********************************/
+/*below 768px(48em)(small tablets)*/
+/********************************/
+@media (max-width: 48em) {
+    .main-nav{
+        display: none;
+    }
+}

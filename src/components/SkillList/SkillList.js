@@ -11,15 +11,11 @@ const skills = [
         level: "intermediate",
     },
     {
-        skill: "SCSS",
-        level: "intermediate",
-    },
-    {
         skill: "Git",
         level: "intermediate",
     },
     {
-        skill: "Responsive Web design",
+        skill: "Responsive design",
         level: "beginner",
     },
     {
@@ -45,11 +41,7 @@ const skills = [
     {
         skill: "React Router",
         level: "beginner",
-    },
-    {
-        skill: "Agile",
-        level: "beginner",
-    },
+    }
 ];
 
 export default function SkillList() {

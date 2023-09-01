@@ -1,9 +1,10 @@
 .skill-box{
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1.2rem;
     justify-content: center;
     align-items: center;
+    padding: 2.4rem 0;
 
     border-radius: 16px;
     transition: all 0.3s;
@@ -24,44 +25,73 @@
 
 .skill-title{
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .skill-level{
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 0.8rem;
+    font-size: 1.6rem;
 }
 
 
-
-
-
 /********************************/
-/*below 704px(44em)(smaller tablets)*/
+/*below 1200px(75em)(landscape tablets)*/
 /********************************/
-@media (max-width: 44em) {
+@media (max-width: 75em) {
     .skill-title{
-        font-size: 0.8rem;
+        font-size: 1.6rem;
     }
 
     .skill-level{
-        font-size: 0.6rem;
+        font-size: 1.4rem;
+    }
+}
+
+
+/********************************/
+/*below 944px(59em)(tablets)*/
+/********************************/
+@media (max-width: 59em) {
+    .skill-title{
+        font-size: 1.6rem;
+    }
+
+    .skill-level{
+        font-size: 1.4rem;
+    }
+}
+
+/********************************/
+/*below 768px(48em)(smaller tablets)*/
+/********************************/
+@media (max-width: 48em) {
+
+}
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
+    .skill-title{
+        font-size: 1.6rem;
+    }
+
+    .skill-level{
+        font-size: 1.4rem;
     }
 
 }
 
 /********************************/
-/*below 384px(24em)(small Phones)*/
+/*below 416px(26em)(small Phones)*/
 /********************************/
-@media (max-width: 24em) {
+@media (max-width: 26em) {
     .skill-title{
-        font-size: 0.6rem;
-        font-weight: 400;
+        font-size: 1.6rem;
     }
 
     .skill-level{
-        font-size: 0.5rem;
+        font-size: 1.2rem;
     }
-
 
 }

@@ -3,5 +3,28 @@
     flex-direction: column;
     gap: 3.2rem;
     justify-content: center;
+}
 
+
+
+
+/********************************/
+/*below 768px(48em)(smaller tablets)*/
+/********************************/
+@media (max-width: 48em) {
+    .education-cards{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
+    .education-cards{
+        width: 100%;
+    }
 }

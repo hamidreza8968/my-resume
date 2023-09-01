@@ -2,7 +2,7 @@ import "./ContactLinks.css"
 
 
 const iconsStyles = {
-    fontSize: "3.6rem",
+    fontSize: "2.4rem",
     color: "#f8f9fa",
     fontWeight: "600",
 };

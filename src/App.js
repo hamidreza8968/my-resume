@@ -28,7 +28,7 @@ function App() {
     <div className="app container">
       <Header stage={stage} stages={stages} onClick={onClick}/>
 
-      <Navigation stages={stages} onClick={onClick}/>
+      <Navigation stages={stages} onClick={onClick} mainNav/>
 
       <div className="img-box">
             <img className="img" src={myPic} alt="my picture"/>

@@ -13,7 +13,7 @@ export default function Introduction() {
                 <li className="list-item">I'm looking for an <span>internship role</span> and I'm excited to contribute to a professional team.</li>
                 <li className="list-item">My commitment, dedication, and quick learning reflect my work ethic. If given the chance, I'm confident I can exceed expectations and make a valuable contribution.</li>
             </ul>
-            <Button>more about me</Button>
+            <Button children="more about me" className="introduction-btn"/>
         </div>
     )
 }

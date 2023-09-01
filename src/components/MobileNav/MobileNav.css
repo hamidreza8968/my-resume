@@ -3,10 +3,22 @@
     background: none;
     cursor: pointer;
 
-    /*display: none;*/
+    display: none;
 }
-.icon-mobile-nav{
-    height: 4.8rem;
-    width: 4.8rem;
-    color: #333;
+
+.icon{
+    color: #f8f9fa;
+    fontWeight: 600;
+    font-size: 3.6rem;
+}
+
+
+
+/********************************/
+/*below 768px(48em)(smaller tablets)*/
+/********************************/
+@media (max-width: 48em) {
+    .btn-mobile-nav{
+        display: unset;
+    }
 }

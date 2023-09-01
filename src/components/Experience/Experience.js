@@ -7,7 +7,7 @@ export default function Experience() {
     const renderedTimeLine = experiences.map((experience , index) => <Timeline key={index} item={experience}/>);
 
     return (
-        <div>
+        <div className="experience-timeline">
             {renderedTimeLine}
         </div>
     )

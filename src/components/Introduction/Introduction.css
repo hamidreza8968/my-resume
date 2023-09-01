@@ -1,7 +1,6 @@
 .introduction-heading{
     font-weight: 600;
     letter-spacing: -0.5px;
-
     font-size: 2.4rem;
     line-height: 1.05;
     margin-bottom: 3.2rem;
@@ -17,8 +16,8 @@
 }
 
 .list-item{
-    font-size: 1.4rem;
-    line-height: 1.2;
+    font-size: 1.6rem;
+    line-height: 1.6;
     /*text-align: justify;*/
 }
 
@@ -28,7 +27,26 @@
     text-transform: capitalize;
 }
 
+.introduction-btn{
+    font-size: 1.4rem;
+    padding: 1.2rem 1.6rem;
+}
 
+
+
+
+/********************************/
+/*below 1200px(75em)(landscape tablets)*/
+/********************************/
+@media (max-width: 75em) {
+    .introduction-heading{
+        font-size: 2.4rem;
+    }
+
+    .list-item{
+        font-size: 1.6rem;
+    }
+}
 
 
 /********************************/
@@ -38,18 +56,62 @@
     .introduction-heading{
         font-size: 2rem;
     }
-}
 
-/********************************/
-/*below 704px(44em)(small tablets)*/
-/********************************/
-@media (max-width: 44em) {
-    .introduction-heading{
+    .list-item{
         font-size: 1.4rem;
     }
 
+}
+
+
+/********************************/
+/*below 768px(48em)(smaller tablets)*/
+/********************************/
+@media (max-width: 48em) {
+    .introduction-heading{
+        font-size: 2.4rem;
+    }
+
     .list-item{
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
 }
+
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
+    .introduction-heading{
+        font-size: 2rem;
+    }
+
+    .list-item{
+        font-size: 1.4rem;
+    }
+
+    .introduction-btn{
+        font-size: 1.6rem;
+    }
+
+}
+
+/********************************/
+/*below 416px(26em)(small phones)*/
+/********************************/
+@media (max-width: 26em) {
+    .introduction-heading{
+        font-size: 1.6rem;
+    }
+
+    .list-item{
+        font-size: 1.2rem;
+    }
+
+    .introduction-btn{
+        font-size: 1rem;
+    }
+}
+
+

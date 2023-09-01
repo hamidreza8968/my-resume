@@ -45,7 +45,7 @@ export default function Contact() {
 
             <form className="form" onSubmit={handleSubmit} action="#">
                 <div className="form-item">
-                    <label htmlFor="name">Name</label>
+                    <label className="label" htmlFor="name">Name</label>
                     <input className="input" value={form.name}
                            onChange={(e) => handleChange(e , "name")}
                            type="text"
@@ -54,7 +54,7 @@ export default function Contact() {
                     {isSubmitted && !form.name && <p className="error-message">Please fill the fields!</p>}
                 </div>
                 <div className="form-item">
-                    <label htmlFor="email">Email</label>
+                    <label className="label" htmlFor="email">Email</label>
                     <input className={isValidEmail ? "input" : "input invalid"} value={form.email} type="email"
                            id="email"
                            onChange={(e) => handleChange(e , "email")}/>
@@ -63,15 +63,15 @@ export default function Contact() {
                     <p className="error-message">Please enter a valid email address.</p>}
                 </div>
                 <div className="form-item">
-                    <label htmlFor="message">Message</label>
-                    <textarea className="input" value={form.message}
+                    <label className="label" htmlFor="message">Message</label>
+                    <textarea className="input noResize" value={form.message}
                               onChange={(e) => handleChange(e , "message")}
-                              name="message" id="message" cols="40" rows="8"
-                              placeholder="Type your message..."/>
+                              name="message" id="message" cols="40" rows="4"
+                              placeholder="Type your message..." />
                     {isSubmitted && !form.message && <p className="error-message">Please fill the fields!</p>}
                 </div>
                 <div className="form-item">
-                    <Button handleClick={handleSubmit}>submit</Button>
+                    <Button handleClick={handleSubmit} children={"submit"} className="form-btn"/>
                 </div>
             </form>
         </div>
