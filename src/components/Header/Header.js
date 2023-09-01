@@ -4,19 +4,30 @@ import MenuItem from "../MenuItem/MenuItem";
 import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
+import MobileNav from "../MobileNav/MobileNav";
+import Navigation from "../Navigation/Navigation";
 
-export default function Header({stage}) {
+export default function Header({stage , stages , onClick}) {
 
-    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [contactModalIsOpen, setContactModalIsOpen] = useState(false);
+    const [navModalIsOpen, setNavModalIsOpen] = useState(false);
 
 
-    function handleOpenModal() {
-        setModalIsOpen(true);
+    function handleOpenContactModal() {
+        setContactModalIsOpen(true);
+    }
+    function handleCloseContactModal() {
+        setContactModalIsOpen(false);
     }
 
-    function handleCloseModal() {
-        setModalIsOpen(false);
+
+    function handleOpenNavModal() {
+        setNavModalIsOpen(true);
     }
+    function handleCloseNavModal() {
+        setNavModalIsOpen(false);
+    }
+
 
     return (
         <header className="header">
@@ -28,13 +39,15 @@ export default function Header({stage}) {
             <div className="Header-right-box">
                 <div className="header-links">
                     <MenuItem>download my cv</MenuItem>
-                    <Button handleClick={handleOpenModal}>get in touch</Button>
-                    <Modal modalIsOpen={modalIsOpen} onClose={handleCloseModal}>
+                    <Button handleClick={handleOpenContactModal}>get in touch</Button>
+                    <Modal modalIsOpen={contactModalIsOpen} onClose={handleCloseContactModal}>
                         <h2>Let's Connect</h2>
                         <p>I'm always excited to connect with fellow developers, collaborators, and potential employers. Whether you have a question, a project idea, or just want to say hello, feel free to reach out using any of the methods below.</p>
                         <ContactLinks/>
                     </Modal>
 
+                    <MobileNav handleOpenModal={handleOpenNavModal}/>
+                    <Modal modalIsOpen={navModalIsOpen} onClose={handleCloseNavModal}><Navigation stages={stages} onClick={onClick}/></Modal>
                 </div>
 
                 <div className="header-divider">

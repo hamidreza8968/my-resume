@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="app container">
-      <Header stage={stage}/>
+      <Header stage={stage} stages={stages} onClick={onClick}/>
 
       <Navigation stages={stages} onClick={onClick}/>
 

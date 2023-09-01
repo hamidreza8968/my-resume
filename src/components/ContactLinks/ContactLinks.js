@@ -1,11 +1,14 @@
 import "./ContactLinks.css"
 
+
+const iconsStyles = {
+    fontSize: "3.6rem",
+    color: "#f8f9fa",
+    fontWeight: "600",
+};
+
 export default function ContactLinks({styles}) {
-    const iconsStyles = {
-        fontSize: "3.6rem",
-        color: "#f8f9fa",
-        fontWeight: "600",
-    };
+
     return (
         <div className="contact-links">
             <div className="contact-linkBox">

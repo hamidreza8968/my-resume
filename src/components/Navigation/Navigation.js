@@ -1,7 +1,7 @@
 import "./Navigation.css";
 import MenuItem from "../MenuItem/MenuItem";
 
-export default function Navigation({stages, stageNum, onClick}) {
+export default function Navigation({stages, onClick}) {
 
     return (
         <div className="nav">
