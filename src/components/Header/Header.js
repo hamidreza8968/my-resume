@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./Header.css";
-import MenuItem from "../MenuItem/MenuItem";
 import Button from "../Button/Button";
+import Link from "../Link/Link";
 import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
 import MobileNav from "../MobileNav/MobileNav";
@@ -38,7 +38,7 @@ export default function Header({stage , stages , onClick}) {
 
             <div className="header-right-box">
                 <div className="header-links">
-                    <MenuItem className="cv-link">download my cv</MenuItem>
+                    <Link className="cv-link">download my cv</Link>
                     <Button handleClick={handleOpenContactModal} children="get in touch" className="header-btn"/>
                     <Modal modalIsOpen={contactModalIsOpen} onClose={handleCloseContactModal}>
                         <h3>Let's Connect</h3>
@@ -47,7 +47,9 @@ export default function Header({stage , stages , onClick}) {
                     </Modal>
 
                     <MobileNav handleOpenModal={handleOpenNavModal} size={"3rem"}/>
-                    <Modal modalIsOpen={navModalIsOpen} onClose={handleCloseNavModal}><Navigation stages={stages} onClick={onClick}/></Modal>
+                    <Modal modalIsOpen={navModalIsOpen} onClose={handleCloseNavModal}>
+                        <Navigation stages={stages} onClick={onClick}/>
+                    </Modal>
                 </div>
 
                 <div className="header-divider">

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import ReactDOM from "react-dom/client"
 import "./App.css";
-
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import myPic from "./images/my.jpeg"
@@ -14,36 +13,41 @@ import Contact from "./components/Contact/Contact";
 // Feel free to contact me if you would like to discuss new opportunities.
 
 function App() {
-  const stages = ["introduction", "education", "experience", "skills", "contact"];
+    const stages = ["introduction", "education", "experience", "skills", "contact"];
 
-  const [stage, setStage] = useState({stageName: "introduction", stageNumber: 1});
-
-
-  function onClick(name,number) {
-    setStage({stageName: name, stageNumber: number+1})
-  }
+    const [stage, setStage] = useState({stageName: "introduction", stageNumber: 1});
 
 
-  return (
-    <div className="app container">
-      <Header stage={stage} stages={stages} onClick={onClick}/>
+    function handleStage(name, number) {
+        setStage({stageName: name, stageNumber: number + 1})
+    }
 
-      <Navigation stages={stages} onClick={onClick} mainNav/>
 
-      <div className="img-box">
-            <img className="img" src={myPic} alt="my picture"/>
-      </div>
+    return (
+        <BrowserRouter>
+            <div className="app container">
+                <Header stage={stage} stages={stages} onClick={handleStage}/>
 
-        <div className="component-box">
-            {stage.stageName === "introduction" && <Introduction/>}
-            {stage.stageName === "education" && <Education/>}
-            {stage.stageName === "experience" && <Experience/>}
-            {stage.stageName === "skills" && <SkillList/>}
-            {stage.stageName === "contact" && <Contact/>}
-        </div>
+                <Navigation stages={stages} mainNav/>
 
-    </div>
-  );
+                <div className="img-box">
+                    <img className="img" src={myPic} alt="my picture"/>
+                </div>
+
+                <div className="component-box">
+                    <Routes>
+                        <Route path="introduction" element={<Introduction/>}/>
+                        <Route path="education" element={<Education/>}/>
+                        <Route path="experience" element={<Experience/>}/>
+                        <Route path="skills" element={<SkillList/>}/>
+                        <Route path="contact" element={<Contact/>}/>
+                    </Routes>
+                </div>
+
+            </div>
+        </BrowserRouter>
+    )
+        ;
 }
 
 

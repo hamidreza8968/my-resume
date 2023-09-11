@@ -7,10 +7,21 @@
     grid-row: 2;
 }
 
-.menuItem-link{
+.nav-link:link , .nav-link:visited{
     font-size: 1.4rem;
+    text-decoration: none;
+    color: #adb5bd;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    padding-bottom: 0.4rem;
+    transition: color 0.3s;
+    width: 12rem;
+    border-bottom: 1px solid #fff;
 }
-
+.nav-link:hover , .nav-link:active{
+    color: #f8f9fa;
+    border-bottom: 1px solid #e67e22;
+}
 
 
 /********************************/
