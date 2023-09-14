@@ -18,6 +18,7 @@ function App() {
     const [stage, setStage] = useState({stageName: "introduction", stageNumber: 1});
 
 
+
     function handleStage(name, number) {
         setStage({stageName: name, stageNumber: number + 1})
     }

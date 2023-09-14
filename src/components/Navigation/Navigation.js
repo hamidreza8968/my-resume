@@ -1,5 +1,5 @@
 import "./Navigation.css";
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import React from "react";
 
 export default function Navigation({stages , mainNav}) {
@@ -7,9 +7,9 @@ export default function Navigation({stages , mainNav}) {
     return (
         <div className={`nav ${mainNav && "main-nav"}`}>
             {stages.map((stage , i) =>
-                    <Link to={stage} className="nav-link">
+                    <NavLink to={stage} className="nav-link" key={i}>
                         {stage}
-                    </Link>
+                    </NavLink>
                 )}
         </div>
     )

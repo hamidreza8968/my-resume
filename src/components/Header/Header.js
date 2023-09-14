@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import {useLocation} from "react-router-dom"
+
 import "./Header.css";
 import Button from "../Button/Button";
 import Link from "../Link/Link";
@@ -7,10 +9,37 @@ import ContactLinks from "../ContactLinks/ContactLinks";
 import MobileNav from "../MobileNav/MobileNav";
 import Navigation from "../Navigation/Navigation";
 
+
 export default function Header({stage , stages , onClick}) {
 
     const [contactModalIsOpen, setContactModalIsOpen] = useState(false);
     const [navModalIsOpen, setNavModalIsOpen] = useState(false);
+
+
+    const location = useLocation().pathname.replace("/" , "").toUpperCase();
+
+    function createLocationNum() {
+        let locationNum;
+        switch (location) {
+            case "INTRODUCTION":
+                locationNum = 1;
+                break;
+            case "EDUCATION":
+                locationNum = 2;
+                break;
+            case "EXPERIENCE":
+                locationNum = 3;
+                break;
+            case "SKILLS":
+                locationNum = 4;
+                break;
+            case "CONTACT":
+                locationNum = 5;
+                break;
+        }
+        return locationNum;
+    }
+
 
 
     function handleOpenContactModal() {
@@ -54,8 +83,8 @@ export default function Header({stage , stages , onClick}) {
 
                 <div className="header-divider">
                     <div className="divider-text-row">
-                        <div className="divider-number">{stage.stageNumber}</div>
-                        <p className="divider-text">{stage.stageName}</p>
+                        <div className="divider-number">{createLocationNum()}</div>
+                        <p className="divider-text">{location}</p>
                     </div>
                     <hr className="divider-line"/>
                 </div>
@@ -63,8 +92,8 @@ export default function Header({stage , stages , onClick}) {
 
             <div className="mobile-divider">
                 <div className="mobile-divider-text-row">
-                    <div className="mobile-divider-number">{stage.stageNumber}</div>
-                    <p className="mobile-divider-text">{stage.stageName}</p>
+                    <div className="mobile-divider-number">{createLocationNum()}</div>
+                    <p className="mobile-divider-text">{location}</p>
                 </div>
                 <hr className="mobile-divider-line"/>
             </div>
