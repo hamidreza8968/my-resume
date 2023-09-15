@@ -13,7 +13,7 @@ import Contact from "./components/Contact/Contact";
 // Feel free to contact me if you would like to discuss new opportunities.
 
 function App() {
-    const stages = ["introduction", "education", "experience", "skills", "contact"];
+    const stages = ["", "education", "experience", "skills", "contact"];
 
     const [stage, setStage] = useState({stageName: "introduction", stageNumber: 1});
 
@@ -37,7 +37,7 @@ function App() {
 
                 <div className="component-box">
                     <Routes>
-                        <Route path="introduction" element={<Introduction/>}/>
+                        <Route path="/" element={<Introduction/>}/>
                         <Route path="education" element={<Education/>}/>
                         <Route path="experience" element={<Experience/>}/>
                         <Route path="skills" element={<SkillList/>}/>

@@ -8,7 +8,7 @@ export default function Navigation({stages , mainNav}) {
         <div className={`nav ${mainNav && "main-nav"}`}>
             {stages.map((stage , i) =>
                     <NavLink to={stage} className="nav-link" key={i}>
-                        {stage}
+                        {stage === "" ? "Introduction" : stage}
                     </NavLink>
                 )}
         </div>
