@@ -17,7 +17,6 @@ export default function Header({ stages, onClick}) {
 
 
     const location = useLocation().pathname.replace("/", "").toUpperCase();
-    console.log(location);
 
     function createLocationNum() {
         let locationNum;
@@ -25,17 +24,20 @@ export default function Header({ stages, onClick}) {
             case "":
                 locationNum = 1;
                 break;
-            case "EDUCATION":
+            case "PROJECTS":
                 locationNum = 2;
                 break;
-            case "EXPERIENCE":
+            case "EDUCATION":
                 locationNum = 3;
                 break;
-            case "SKILLS":
+            case "EXPERIENCE":
                 locationNum = 4;
                 break;
-            case "CONTACT":
+            case "SKILLS":
                 locationNum = 5;
+                break;
+            case "CONTACT":
+                locationNum = 6;
                 break;
         }
         return locationNum;
