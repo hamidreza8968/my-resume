@@ -3,36 +3,42 @@
     "title": "fun-with-movies",
     "src": "/assets/fun-with-movies1.jpeg",
     "srcHover": "/assets/fun-with-movies2.jpeg",
-    "tools": ["CSS" , "React.js" , "React Hooks", "ES6", "Responsive design"]
+    "tools": ["CSS" , "React.js" , "React Hooks", "ES6", "Responsive design"],
+    "address": "https://fun-with-movies.netlify.app/"
   },
   {
     "title": "bill-share-pro",
     "src": "/assets/bill-share-pro1.jpeg",
     "srcHover": "/assets/bill-share-pro2.jpeg",
-    "tools": ["CSS" , "React.js" , "ES6", "Responsive design"]
+    "tools": ["CSS" , "React.js" , "ES6", "Responsive design"],
+    "address": "https://bill-share-pro.netlify.app/"
   },
   {
     "title": "travel-packing-list",
     "src": "/assets/travel-packing-list1.jpeg",
     "srcHover": "/assets/travel-packing-list2.jpeg",
-    "tools": ["CSS" , "React.js" , "ES6", "Responsive design"]
+    "tools": ["CSS" , "React.js" , "ES6", "Responsive design"],
+    "address": "https://travel-packing-list-pro.netlify.app/"
   },
   {
     "title": "chairs-market",
     "src": "/assets/chairs-market1.jpeg",
     "srcHover": "/assets/chairs-market2.jpeg",
-    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"]
+    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"],
+    "address": "https://chairs-market.netlify.app/"
   },
   {
     "title": "omni-food",
     "src": "/assets/omni-food1.jpeg",
     "srcHover": "/assets/omni-food2.jpeg",
-    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"]
+    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"],
+    "address": "https://omni-diet-food.netlify.app/"
   },
   {
     "title": "elza-caffe",
     "src": "/assets/elza-caffe1.jpeg",
     "srcHover": "/assets/elza-caffe2.jpeg",
-    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"]
+    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"],
+    "address": "https://elza-caffe.netlify.app/"
   }
 ]

@@ -1,20 +1,41 @@
-.project-card {
+img{
+    width: 80%;
+    height: 12rem;
+    border-radius: 8px;
+    border:2px solid #fff;
+}
+
+.project-title{
+    color: #e67e22;
+    font-size: 2rem;
+}
+
+.project-card:link , .project-card:visited {
     max-width: 30rem;
     margin: auto;
     text-align: center;
-    font-family: arial;
+    cursor: pointer;
+    text-decoration: none;
+    color: #adb5bd;
+    font-size: 1.8rem;
 
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 1.2rem;
     justify-items: center;
+
+    transition: color 0.3s;
 }
 
-img{
-    width: 80%;
+.project-card:hover .project-tools{
+    color: #f8f9fa;
+}
+.project-card:hover .project-title{
+     color: #f76707;
+}
+.project-card:hover img{
+    border-color:#e67e22;
 }
 
-.project-tools{
-    color: grey;
-    font-size: 1.8rem;
-}
+
+
