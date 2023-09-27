@@ -66,14 +66,15 @@ html{
 }
 
 body{
-    background: rgb(4,4,30);
-    background: linear-gradient(360deg, rgba(4,4,30,1) 50%, rgba(7,7,55,1) 80%);
-    background-repeat: no-repeat;
 
     font-family: "Inter" , sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #f8f9fa;
+
+    background: rgb(4,4,30);
+    background: linear-gradient(360deg, rgba(4,4,30,1) 50%, rgba(7,7,55,1) 80%);
+    background-repeat: no-repeat;
 }
 
 
@@ -122,6 +123,7 @@ body{
 
 
 
+
 /********************************/
 /*below 944px(59em)(tablets)*/
 /********************************/
@@ -136,15 +138,6 @@ body{
 /*below 768px(48em)(small tablets)*/
 /********************************/
 @media (max-width: 48em) {
-    /*.img{*/
-    /*    height: 20rem;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*.img-box::after{*/
-    /*    height: 20rem;*/
-    /*    width: 100%;*/
-    /*}*/
-
     .app{
         grid-template-columns: 1fr 3fr;
         row-gap: 0;

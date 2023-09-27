@@ -4,3 +4,32 @@
     row-gap: 4.8rem;
     column-gap: 2.4rem;
 }
+
+
+
+
+/********************************/
+/*below 944px(59em)(tablets)*/
+/********************************/
+@media (max-width: 59em) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+
+        height: 65%;
+        overflow-y: scroll;
+    }
+
+}
+
+
+/********************************/
+/*below 544px(34em)(phones)*/
+/********************************/
+@media (max-width: 34em) {
+    .projects {
+        grid-template-columns: 1fr;
+
+        height: 45%;
+    }
+
+}

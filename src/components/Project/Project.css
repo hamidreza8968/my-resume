@@ -39,3 +39,25 @@ img{
 
 
 
+
+/********************************/
+/*below 1408px(88em)(laptop)*/
+/********************************/
+@media (max-width: 88em) {
+    .project-card:link , .project-card:visited {
+        max-width: 26rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+
+/********************************/
+/*below 944px(59em)(tablets)*/
+/********************************/
+@media (max-width: 59em) {
+    .project-card:link , .project-card:visited {
+        max-width: 30rem;
+    }
+}
+
