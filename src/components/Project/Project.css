@@ -57,7 +57,24 @@ img{
 /********************************/
 @media (max-width: 59em) {
     .project-card:link , .project-card:visited {
-        max-width: 30rem;
+        max-width: 22rem;
+        font-size: 1.2rem;
+    }
+    .project-title{
+        font-size: 1.7rem;
     }
 }
 
+
+/********************************/
+/*below 768px(48em)(smaller tablets)*/
+/********************************/
+@media (max-width: 48em) {
+    .project-card:link , .project-card:visited {
+        max-width: 30rem;
+        font-size: 1.4rem;
+    }
+    .project-title{
+        font-size: 2rem;
+    }
+}

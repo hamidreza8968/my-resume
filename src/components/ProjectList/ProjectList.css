@@ -12,6 +12,19 @@
 /*below 944px(59em)(tablets)*/
 /********************************/
 @media (max-width: 59em) {
+    .projects{
+        column-gap: 1rem;
+
+    }
+}
+
+
+
+/********************************/
+/*below 768px(48em)(smaller tablets)*/
+/********************************/
+@media (max-width: 48em) {
+
     .projects {
         grid-template-columns: 1fr 1fr;
 
@@ -20,6 +33,7 @@
     }
 
 }
+
 
 
 /********************************/
