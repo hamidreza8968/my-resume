@@ -39,6 +39,8 @@ export default function Header({ stages, onClick}) {
             case "CONTACT":
                 locationNum = 6;
                 break;
+            default:
+                locationNum = 1;
         }
         return locationNum;
     }

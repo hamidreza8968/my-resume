@@ -10,8 +10,8 @@ export default function Project({projectObj}) {
         setImageSrc(projectObj.src);
     };
     return (
-        <a className="project-card" href={projectObj.address} target="_blank">
-            <img className="project-img" src={imageSrc} alt="picture of website" onMouseEnter={handleMouseEnter}
+        <a className="project-card" href={projectObj.address} target="_blank" rel="noreferrer">
+            <img className="project-img" src={imageSrc} alt={imageSrc} onMouseEnter={handleMouseEnter}
                  onMouseLeave={handleMouseLeave}/>
             <h1 className="project-title">{projectObj.title}</h1>
             <div className="project-tools">
