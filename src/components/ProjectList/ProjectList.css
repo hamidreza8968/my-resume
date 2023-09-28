@@ -43,7 +43,7 @@
     .projects {
         grid-template-columns: 1fr;
 
-        height: 45%;
+        height: 25%;
     }
 
 }
