@@ -1,44 +1,44 @@
 [
   {
-    "title": "fun-with-movies",
+    "title": "Fun with Movies",
     "src": "/assets/fun-with-movies1.jpeg",
     "srcHover": "/assets/fun-with-movies2.jpeg",
-    "tools": ["CSS" , "React.js" , "React Hooks", "ES6", "Responsive design"],
+    "tools": ["React", "JS", "CSS" , "Responsive design", "Git"],
     "address": "https://fun-with-movies.netlify.app/"
   },
   {
-    "title": "bill-share-pro",
+    "title": "Bill Share Pro",
     "src": "/assets/bill-share-pro1.jpeg",
     "srcHover": "/assets/bill-share-pro2.jpeg",
-    "tools": ["CSS" , "React.js" , "ES6", "Responsive design"],
+    "tools": ["React" , "JS", "CSS" , "Responsive design", "Git"],
     "address": "https://bill-share-pro.netlify.app/"
   },
   {
-    "title": "travel-packing-list",
+    "title": "Travel Packing List",
     "src": "/assets/travel-packing-list1.jpeg",
     "srcHover": "/assets/travel-packing-list2.jpeg",
-    "tools": ["CSS" , "React.js" , "ES6", "Responsive design"],
+    "tools": ["React" , "JS", "CSS" , "Responsive design", "Git"],
     "address": "https://travel-packing-list-pro.netlify.app/"
   },
   {
-    "title": "chairs-market",
+    "title": "Chair Market",
     "src": "/assets/chairs-market1.jpeg",
     "srcHover": "/assets/chairs-market2.jpeg",
-    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"],
+    "tools": ["HTML" , "CSS" , "JS" , "Responsive design", "Git"],
     "address": "https://chairs-market.netlify.app/"
   },
   {
-    "title": "omni-food",
+    "title": "Omni Food",
     "src": "/assets/omni-food1.jpeg",
     "srcHover": "/assets/omni-food2.jpeg",
-    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"],
+    "tools": ["HTML" , "CSS" , "JS" , "Responsive design", "Git"],
     "address": "https://omni-diet-food.netlify.app/"
   },
   {
-    "title": "elza-caffe",
+    "title": "Elza Caffe",
     "src": "/assets/elza-caffe1.jpeg",
     "srcHover": "/assets/elza-caffe2.jpeg",
-    "tools": ["HTML" , "CSS" , "JavaScript" , "Responsive design"],
+    "tools": ["HTML" , "CSS" , "JS" , "Responsive design", "Git"],
     "address": "https://elza-caffe.netlify.app/"
   }
 ]
