@@ -1,9 +1,10 @@
 import "./Link.css"
+import React from "react";
 
 export default function Link({children , onClick, className}) {
     return(
         <div className={className}>
-            <a className="links" href="#" onClick={onClick}>{children}</a>
+            <button className="links" onClick={onClick}>{children}</button>
         </div>
     )
 }

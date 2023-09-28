@@ -4,7 +4,7 @@ import React from "react";
 export default function Button({children , handleClick , className}) {
     return (
         <div>
-            <a onClick={handleClick} className={`btn ${className}`} href="#">{children}</a>
+            <button onClick={handleClick} className={`btn ${className}`}>{children}</button>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-.btn:link , .btn:visited{
+.btn{
     display: inline-block;
     text-decoration: none;
     color: #f8f9fa;
@@ -7,10 +7,11 @@
     background-color: #e67e22;
     border-radius: 16px;
     transition: all 0.3s;
+    outline: unset;
+    border: unset;
+    cursor: pointer;
 }
 
 .btn:hover , .btn:active{
     background-color: #f76707;
 }
-
-
