@@ -1,13 +1,13 @@
 import React, {useState} from "react";
-import {useLocation} from "react-router-dom"
-
+import {useLocation} from "react-router-dom";
+import "../Link/Link.css";
 import "./Header.css";
 import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
 import MobileNav from "../MobileNav/MobileNav";
 import Navigation from "../Navigation/Navigation";
-import resume from "../../doc/HamidrezaSeydabadiResume.pdf"
+import resume from "../../doc/HamidrezaSeydabadiResume.pdf";
 
 export default function Header({stages, onClick}) {
 
