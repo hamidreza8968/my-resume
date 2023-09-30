@@ -8,9 +8,9 @@ import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
 import MobileNav from "../MobileNav/MobileNav";
 import Navigation from "../Navigation/Navigation";
+import resume from "../../doc/HamidrezaSeydabadiResume.pdf"
 
-
-export default function Header({ stages, onClick}) {
+export default function Header({stages, onClick}) {
 
     const [contactModalIsOpen, setContactModalIsOpen] = useState(false);
     const [navModalIsOpen, setNavModalIsOpen] = useState(false);
@@ -73,8 +73,11 @@ export default function Header({ stages, onClick}) {
 
             <div className="header-right-box">
                 <div className="header-links">
-                    <Link className="cv-link">download my cv</Link>
-                    <Button handleClick={handleOpenContactModal} children="get in touch" className="header-btn"/>
+                    <div className="cv-link">
+                        <a href={resume} target="_blank" className="links">download my cv</a>
+                    </div>
+                    <Button handleClick={handleOpenContactModal} children="get in touch"
+                            className="header-btn"/>
                     <Modal modalIsOpen={contactModalIsOpen} onClose={handleCloseContactModal}>
                         <h3>Let's Connect</h3>
                         <p>I'm always excited to connect with fellow developers,
