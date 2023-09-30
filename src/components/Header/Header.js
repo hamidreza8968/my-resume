@@ -3,7 +3,6 @@ import {useLocation} from "react-router-dom"
 
 import "./Header.css";
 import Button from "../Button/Button";
-import Link from "../Link/Link";
 import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
 import MobileNav from "../MobileNav/MobileNav";
@@ -74,7 +73,8 @@ export default function Header({stages, onClick}) {
             <div className="header-right-box">
                 <div className="header-links">
                     <div className="cv-link">
-                        <a href={resume} target="_blank" className="links">download my cv</a>
+                        <a href={resume} target="_blank" rel="noreferrer"
+                           className="links">download my cv</a>
                     </div>
                     <Button handleClick={handleOpenContactModal} children="get in touch"
                             className="header-btn"/>
