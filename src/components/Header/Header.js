@@ -7,7 +7,7 @@ import Modal from "../Modal/Modal";
 import ContactLinks from "../ContactLinks/ContactLinks";
 import MobileNav from "../MobileNav/MobileNav";
 import Navigation from "../Navigation/Navigation";
-import resume from "../../doc/HamidrezaSeydabadiResume.pdf";
+import resume from "../../doc/SeydabadiResume.pdf";
 
 export default function Header({stages, onClick}) {
 
