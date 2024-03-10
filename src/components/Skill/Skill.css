@@ -9,11 +9,11 @@
     border-radius: 16px;
     transition: all 0.3s;
 }
-.skill-box-beginner{
+.skill-box-intermediate{
     background-color: rgb(230 126 35 / 32%);
     border-top: 3px solid rgb(230 126 35 / 32%);
 }
-.skill-box-intermediate{
+.skill-box-advanced{
     background-color: rgb(140 233 154 / 32%);
     border-top: 3px solid rgb(140 233 154 / 32%);
 }
@@ -25,12 +25,12 @@
 
 .skill-title{
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .skill-level{
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 
@@ -38,13 +38,6 @@
 /*below 1200px(75em)(landscape tablets)*/
 /********************************/
 @media (max-width: 75em) {
-    .skill-title{
-        font-size: 1.6rem;
-    }
-
-    .skill-level{
-        font-size: 1.4rem;
-    }
 }
 
 

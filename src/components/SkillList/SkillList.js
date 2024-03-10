@@ -3,45 +3,66 @@ import Skill from "../Skill/Skill";
 
 const skills = [
     {
-        skill: "HTML",
-        level: "intermediate",
-    },
-    {
-        skill: "CSS",
-        level: "intermediate",
-    },
-    {
-        skill: "Git",
-        level: "intermediate",
-    },
-    {
-        skill: "Responsive design",
-        level: "beginner",
-    },
-    {
-        skill: "JavaScript",
-        level: "beginner",
-    },
-    {
-        skill: "ES6",
-        level: "beginner",
+        skill: "Web development",
+        level: "Intermediate",
     },
     {
         skill: "React.js",
-        level: "beginner",
+        level: "Intermediate",
     },
     {
-        skill: "React Hooks",
-        level: "beginner",
+        skill: "JavaScript",
+        level: "Intermediate",
+    },
+    {
+        skill: "TypeScript",
+        level: "Intermediate",
+    },
+    {
+        skill: "HTML",
+        level: "Advanced",
+    },
+    {
+        skill: "CSS & SCSS",
+        level: "Advanced",
     },
     {
         skill: "Redux.js",
-        level: "beginner",
+        level: "Intermediate",
     },
     {
-        skill: "React Router",
-        level: "beginner",
-    }
+        skill: "NEXT.js",
+        level: "Intermediate",
+    },
+    {
+        skill: "REST APIs",
+        level: "Intermediate",
+    },
+    {
+        skill: "Tailwind CSS",
+        level: "Intermediate",
+    },
+    {
+        skill: "Ant Design",
+        level: "Intermediate",
+    },
+    {
+        skill: "Responsive design",
+        level: "Advanced",
+    },
+    {
+        skill: "Git",
+        level: "Advanced",
+    },
+
+    {
+        skill: "Scrum and Agile",
+        level: "Advanced",
+    },
+    {
+        skill: "Figma",
+        level: "Intermediate",
+    },
 ];
 
 export default function SkillList() {

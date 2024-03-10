@@ -5,12 +5,17 @@ export default function Introduction() {
 
     return (
         <div>
-            <h1 className="introduction-heading">Hello! I'm Hamidreza Seyedabadi</h1>
+            <h1 className="introduction-heading">Hello! I'm Hami</h1>
             <ul className="list">
-                <li className="list-item">I am a <span>beginner front-end developer</span> with <span>six</span> years of experience in process management, which has sharpened my communication and collaboration skills.</li>
-                <li className="list-item">Because of My interest in programming, I took relevant courses. I've focused on learning <span>CSS</span>, <span>HTML</span>, <span>JavaScript</span>, and <span>React</span> through writing personal projects in the last year.</li>
-                <li className="list-item">I'm looking for an <span>internship role</span> and I'm excited to contribute to a professional team.</li>
-                <li className="list-item">My commitment, dedication, and quick learning reflect my work ethic. If given the chance, I'm confident I can exceed expectations and make a valuable contribution.</li>
+                <li className="list-item">Detail-oriented, organized, and meticulous Frontend Web Developer who works at a fast pace to meet tight
+                    deadlines.</li>
+                    <li className="list-item">A collaborative team player ready to contribute to company success. </li>
+                <li className="list-item">Proficient in Agile
+                    environments and adept at developing and maintaining front-end components.</li>
+                <li className="list-item">Skilled in responsive
+                    design, coding standards, and conducting code reviews.</li>
+                <li className="list-item">Committed to continuous learning and staying
+                    updated with the latest technologies.</li>
             </ul>
         </div>
     )
