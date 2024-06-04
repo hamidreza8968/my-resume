@@ -12,7 +12,7 @@ export default function ContactLinks() {
     return (
         <div className="contact-links">
             <div className="contact-linkBox">
-                <a  data-title="076-2812532" className="link contact-link tooltip" target="_blank"  rel="noreferrer"  href="tel:076-2812532">
+                <a  data-title="073-9188350" className="link contact-link tooltip" target="_blank"  rel="noreferrer"  href="tel:076-2812532">
                     <div>
                         <ion-icon style={iconsStyles} name="call-outline"/>
                     </div>
