@@ -3,6 +3,21 @@ import {useState} from "react";
 import Card from "../Card/Card";
 const educationInfo = [
     {
+        degree: "Programming Qualifications",
+        major: "The Ultimate React Course 2024",
+        university: "Udemy"
+    },
+    {
+        degree: "Programming Qualifications",
+        major: "The Complete JavaScript Course 2024",
+        university: "Udemy"
+    },
+    {
+        degree: "Programming Qualifications",
+        major: "Responsive Websites with HTML and CSS Course 2023",
+        university: "Udemy"
+    },
+    {
         degree: "bachelor's degree",
         major: "industrial engineering",
         university: "Iran university of science and technology"
@@ -12,16 +27,9 @@ const educationInfo = [
         major: "industrial management",
         university: "Allameh tabatabai university"
     },
-    {
-        degree: "Programming Qualifications",
-        major: `- The Ultimate React Course 2024 , - The Complete JavaScript Course 2024, - Responsive Real-World Websites with HTML and CSS Course 2023`,
-        university: "Udemy"
-    },
 ];
 
 export default function Education() {
-
-
 
     const [curOpen, setCurOpen] = useState(null);
 

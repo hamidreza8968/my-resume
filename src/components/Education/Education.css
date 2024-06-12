@@ -1,11 +1,7 @@
 .education-cards{
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-    justify-content: center;
+    display: grid;
+    gap: 2.4rem;
 }
-
-
 
 
 /********************************/
@@ -26,5 +22,19 @@
 @media (max-width: 34em) {
     .education-cards{
         width: 100%;
+        height: 85%;
+        overflow-y: scroll;
+    }
+    .education-cards::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .education-cards::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    .education-cards::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
 }
