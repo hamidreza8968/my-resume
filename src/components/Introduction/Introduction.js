@@ -6,7 +6,7 @@ export default function Introduction() {
     return (
         <div>
             <div className="introduction-heading">
-                <h1 className="fullName">Hamid Seyedabadi</h1>
+                <h1 className="fullName">Hamidreza Seyedabadi</h1>
                 <h1 className="specially">Frontend Developer</h1>
             </div>
             <ul className="list">

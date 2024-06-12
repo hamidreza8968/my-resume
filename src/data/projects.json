@@ -1,9 +1,24 @@
 [
+
+  {
+    "title": "Mailsentry",
+    "src": "/assets/mailsentry1.webp",
+    "srcHover": "/assets/mailsentry2.webp",
+    "tools": ["React", "NextJS", "TypeScript", "REST API", "Tailwind" , "Ant design", "Git"],
+    "address": "https://mailsentry.io/"
+  },
+  {
+    "title": "Innovatogy",
+    "src": "/assets/innovategy1.webp",
+    "srcHover": "/assets/innovategy2.webp",
+    "tools": ["React", "TypeScript", "REST API", "Tailwind" , "Responsive design", "Git"],
+    "address": "https://innovategy.io/"
+  },
   {
     "title": "Fun with Movies",
     "src": "/assets/fun-with-movies1.jpeg",
     "srcHover": "/assets/fun-with-movies2.jpeg",
-    "tools": ["React", "JS", "CSS" , "Responsive design", "Git"],
+    "tools": ["React", "JS", "REST API", "CSS" , "Responsive design", "Git"],
     "address": "https://fun-with-movies.netlify.app/"
   },
   {

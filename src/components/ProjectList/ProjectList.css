@@ -1,20 +1,35 @@
 .projects{
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 4.8rem;
+    row-gap: 4rem;
     column-gap: 2.4rem;
+    max-height: 64rem;
+    overflow-y: scroll;
+    padding: 2rem;
 }
 
+.projects::-webkit-scrollbar {
+    width: 12px;
+}
 
+.projects::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.projects::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 
 /********************************/
 /*below 944px(59em)(tablets)*/
 /********************************/
 @media (max-width: 59em) {
-    .projects{
-        column-gap: 1rem;
-
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        max-height: 50%;
     }
 }
 
@@ -24,26 +39,8 @@
 /*below 768px(48em)(smaller tablets)*/
 /********************************/
 @media (max-width: 48em) {
-
-    .projects {
-        grid-template-columns: 1fr 1fr;
-
-        height: 65%;
-        overflow-y: scroll;
-    }
-
-}
-
-
-
-/********************************/
-/*below 544px(34em)(phones)*/
-/********************************/
-@media (max-width: 34em) {
     .projects {
         grid-template-columns: 1fr;
-
-        height: 25%;
+        max-height: 20%;
     }
-
 }
