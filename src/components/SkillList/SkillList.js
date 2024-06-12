@@ -3,22 +3,6 @@ import Skill from "../Skill/Skill";
 
 const skills = [
     {
-        skill: "Web development",
-        level: "Intermediate",
-    },
-    {
-        skill: "React.js",
-        level: "Intermediate",
-    },
-    {
-        skill: "JavaScript",
-        level: "Intermediate",
-    },
-    {
-        skill: "TypeScript",
-        level: "Intermediate",
-    },
-    {
         skill: "HTML",
         level: "Advanced",
     },
@@ -27,11 +11,27 @@ const skills = [
         level: "Advanced",
     },
     {
-        skill: "Redux.js",
+        skill: "Tailwind CSS",
+        level: "Advanced",
+    },
+    {
+        skill: "Responsive design",
+        level: "Advanced",
+    },
+    {
+        skill: "React.js",
+        level: "Advanced",
+    },
+    {
+        skill: "JavaScript",
+        level: "Advanced",
+    },
+    {
+        skill: "TypeScript",
         level: "Intermediate",
     },
     {
-        skill: "NEXT.js",
+        skill: "NextJS",
         level: "Intermediate",
     },
     {
@@ -39,7 +39,7 @@ const skills = [
         level: "Intermediate",
     },
     {
-        skill: "Tailwind CSS",
+        skill: "Redux",
         level: "Intermediate",
     },
     {
@@ -47,17 +47,13 @@ const skills = [
         level: "Intermediate",
     },
     {
-        skill: "Responsive design",
-        level: "Advanced",
-    },
-    {
         skill: "Git",
-        level: "Advanced",
+        level: "Intermediate",
     },
 
     {
         skill: "Scrum and Agile",
-        level: "Advanced",
+        level: "Intermediate",
     },
     {
         skill: "Figma",
