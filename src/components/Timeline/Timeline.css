@@ -1,9 +1,7 @@
 .timeline{
     position: relative;
-
     display: flex;
     flex-direction: column;
-    gap: 8rem;
 }
 .timeline:before{
     content: "";
@@ -18,7 +16,6 @@
 .timeline-item{
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
     margin-left: 4.8rem;
     margin-bottom: 3.2rem;
 
