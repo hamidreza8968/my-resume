@@ -1,12 +1,16 @@
 .img-box{
     position: relative;
 }
-.img{
+
+.img {
     height: 30rem;
     width: 75%;
     border-radius: 16px;
     object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4),
+    0 8px 24px rgba(0, 0, 0, 0.3);
 }
+
 .img-box::after{
     content: "";
     display: block;
