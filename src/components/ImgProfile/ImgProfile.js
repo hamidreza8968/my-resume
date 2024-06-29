@@ -1,7 +1,6 @@
 import React from "react";
 import {useLocation} from "react-router-dom"
 import "./ImgProfile.css"
-
 import myPic from "../../assets/my.jpeg";
 
 

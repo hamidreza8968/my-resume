@@ -22,20 +22,6 @@
     "address": "https://fun-with-movies.netlify.app/"
   },
   {
-    "title": "Bill Share Pro",
-    "src": "/assets/bill-share-pro1.jpeg",
-    "srcHover": "/assets/bill-share-pro2.jpeg",
-    "tools": ["React" , "JS", "CSS" , "Responsive design", "Git"],
-    "address": "https://bill-share-pro.netlify.app/"
-  },
-  {
-    "title": "Travel Packing List",
-    "src": "/assets/travel-packing-list1.jpeg",
-    "srcHover": "/assets/travel-packing-list2.jpeg",
-    "tools": ["React" , "JS", "CSS" , "Responsive design", "Git"],
-    "address": "https://travel-packing-list-pro.netlify.app/"
-  },
-  {
     "title": "Chair Market",
     "src": "/assets/chairs-market1.jpeg",
     "srcHover": "/assets/chairs-market2.jpeg",
@@ -55,5 +41,12 @@
     "srcHover": "/assets/elza-caffe2.jpeg",
     "tools": ["HTML" , "CSS" , "JS" , "Responsive design", "Git"],
     "address": "https://elza-caffe.netlify.app/"
+  },
+  {
+    "title": "Bill Share Pro",
+    "src": "/assets/bill-share-pro1.jpeg",
+    "srcHover": "/assets/bill-share-pro2.jpeg",
+    "tools": ["React" , "JS", "CSS" , "Responsive design", "Git"],
+    "address": "https://bill-share-pro.netlify.app/"
   }
 ]

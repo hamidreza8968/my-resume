@@ -15,10 +15,6 @@ const skills = [
         level: "Advanced",
     },
     {
-        skill: "Responsive design",
-        level: "Advanced",
-    },
-    {
         skill: "React.js",
         level: "Advanced",
     },
@@ -28,14 +24,35 @@ const skills = [
     },
     {
         skill: "TypeScript",
-        level: "Intermediate",
+        level: "Advanced",
     },
     {
-        skill: "NextJS",
-        level: "Intermediate",
+        skill: "Cypress",
+        level: "Advanced",
+    },
+    {
+        skill: "JEST",
+        level: "Advanced",
     },
     {
         skill: "REST APIs",
+        level: "Advanced",
+    },
+    {
+        skill: "Responsive design",
+        level: "Advanced",
+    },
+    {
+        skill: "Git",
+        level: "Advanced",
+    },
+
+    {
+        skill: "Scrum and Agile",
+        level: "Advanced",
+    },
+    {
+        skill: "NextJS",
         level: "Intermediate",
     },
     {
@@ -44,19 +61,6 @@ const skills = [
     },
     {
         skill: "Ant Design",
-        level: "Intermediate",
-    },
-    {
-        skill: "Git",
-        level: "Intermediate",
-    },
-
-    {
-        skill: "Scrum and Agile",
-        level: "Intermediate",
-    },
-    {
-        skill: "Figma",
         level: "Intermediate",
     },
 ];
